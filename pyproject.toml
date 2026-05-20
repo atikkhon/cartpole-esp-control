@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esp-cartpole-control"
+version = "0.1.0"
+description = "Feed-forward ESP controller for CartPole-v1"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,53 @@
+{
+    "model_type": "RandomSearchFeedForward",
+    "best_training_fitness": 500.0,
+    "best_test_successes": 20,
+    "test_episodes": 20,
+    "best_test_success_rate": 1.0,
+    "best_test_mean_reward": 500.0,
+    "success_reward_threshold": 475.0,
+    "best_training_seed": 14,
+    "best_test_seed": 1004,
+    "best_generation": 4,
+    "best_network_index": 9,
+    "hidden_count": 2,
+    "subpopulation_size": 10,
+    "trials_per_neuron": 1,
+    "episodes_per_fitness": 3,
+    "network_evaluations_per_generation": 20,
+    "episode_evaluations_per_generation": 60,
+    "network": {
+        "network_type": "feed_forward_esp",
+        "input_size": 4,
+        "output_size": 2,
+        "hidden_count": 2,
+        "neurons": [
+            {
+                "input_weights": [
+                    0.037042101618316,
+                    -0.9468959524775162,
+                    -0.697227657313741,
+                    -0.9429871715660805
+                ],
+                "output_weights": [
+                    0.7324829930357757,
+                    -0.3405235639945219
+                ],
+                "bias": 0.04226241469265268
+            },
+            {
+                "input_weights": [
+                    0.574515875978181,
+                    0.37779364949956995,
+                    0.8526291209912156,
+                    -0.02039262255401697
+                ],
+                "output_weights": [
+                    0.40487563006878813,
+                    0.7355093377820083
+                ],
+                "bias": -0.7856059539229034
+            }
+        ]
+    }
+}

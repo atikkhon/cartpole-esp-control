@@ -1,0 +1,33 @@
+# Базовая задача управления из Gymnasium.
+env_name: CartPole-v1
+seed: 1
+
+# Архитектура по варианту: ESP прямого распространения, 1 скрытый слой.
+input_size: 4
+output_size: 2
+hidden_count: 2
+subpopulation_size: 10
+
+# Фиксированный вычислительный бюджет.
+generations: 10
+trials_per_neuron: 1 # как минимум это число раз каждый нейрон будет участвовать в сетях
+episodes_per_fitness: 3 # сколько тестовых эпизодов сеть тестируется, для расчёта ср. fintess сети
+
+# Параметры ESP.
+mutation_scale: 0.15 # используется при создании новых поколнеий функцией create_next_generattion()
+burst_mutation_scale: 0.5 # передаётся в mutation cauchy, амплитуда шума к весам
+crossover_rate: 0.8 # если генератор выдаст меньше чем crossover_rate, то кроссовер будет, иначе не будет
+stagnation_limit: 8 #Лимит, по достижению которого применяется burst mutation
+use_burst_mutation: true
+
+# Выбор лучшей сети.
+# Сеть сохраняется не по первому удачному fitness, а по проверочной серии:
+# 1) максимум успешных тестовых эпизодов лучшей сети;
+# 2) при равенстве - максимум средней награды лучшей сети на тестовых эпизодах;
+# 3) при равенстве - лучший средний fitness поколения.
+test_episodes: 20
+test_seed: 1000
+success_reward_threshold: 475.0
+
+results_dir: results
+saved_models_dir: saved_models

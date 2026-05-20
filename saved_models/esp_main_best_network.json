@@ -1,0 +1,48 @@
+{
+    "best_training_fitness": 261.6666666666667,
+    "best_test_successes": 0,
+    "test_episodes": 20,
+    "best_test_success_rate": 0.0,
+    "best_test_mean_reward": 254.4,
+    "success_reward_threshold": 475.0,
+    "best_training_seed": 10,
+    "best_test_seed": 1009,
+    "best_generation": 9,
+    "best_trial": 0,
+    "best_fixed_subpopulation_index": 0,
+    "episodes_per_fitness": 3,
+    "network": {
+        "network_type": "feed_forward_esp",
+        "input_size": 4,
+        "output_size": 2,
+        "hidden_count": 2,
+        "neurons": [
+            {
+                "input_weights": [
+                    0.4781872692488147,
+                    -0.11941514511778696,
+                    0.39496757413045425,
+                    -1.866085512861024
+                ],
+                "output_weights": [
+                    0.36457305059594525,
+                    -1.840184091572435
+                ],
+                "bias": 0.24633446300577855
+            },
+            {
+                "input_weights": [
+                    1.8343300512026228,
+                    3.920934173932735,
+                    -0.3942335415427628,
+                    10.0
+                ],
+                "output_weights": [
+                    -1.3217235648736416,
+                    0.03089014225658212
+                ],
+                "bias": -0.7213741737281874
+            }
+        ]
+    }
+}
